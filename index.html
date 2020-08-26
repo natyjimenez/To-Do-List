@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tareas</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+</head>
+
+<body>
+
+    <div id="app" class="app">
+        <h1>Ingresa el nombre de una tarea para añadirla a la lista</h1>
+        <ul class="lista">
+            <li v-for="tarea of tareas"> {{tarea}}</li>
+        </ul>
+        <input v-model="tarea" type="text" class="ingTxt">
+        <button @click="agregarTarea" class="btn"> Agregar Tarea </button>
+    </div>
+
+    <script>
+        const app = new Vue({
+            el: "#app",
+            data: {
+                tareas: [],
+                tarea: ""
+            },
+            methods: {
+                agregarTarea() {
+                    this.tareas.push(this.tarea);
+                    this.tarea = ""
+                }
+            }
+        })
+    </script>
+
+
+</body>
+
+</html>

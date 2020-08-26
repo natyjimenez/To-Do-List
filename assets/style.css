@@ -1,0 +1,45 @@
+body {
+    background-color: rgb(168, 193, 240);
+    font-family: "Balsamiq Sans";
+}
+
+.app {
+    max-width: 150px;
+    margin: auto;
+    text-align: center;
+}
+
+.ingTxt {
+    padding: 5px 0;
+    border-radius: 5px;
+    border-style: none;
+}
+
+.btn {
+    padding: 5px 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+    border-style: none;
+    color: rgb(248, 248, 248);
+    background-color: rgba(97, 97, 97, 0.589);
+    font-weight: 700;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.lista {
+    list-style-type: decimal;
+    color: rgb(248, 248, 248);
+    background-color: rgba(127, 128, 129, 0.363);
+    font-family: "Balsamiq Sans";
+    font-weight: 400;
+    text-align: left;
+}
+
+h1 {
+    font-weight: 400;
+    font-size: 14px;
+    color: rgb(248, 248, 248);
+}
